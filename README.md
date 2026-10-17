@@ -708,10 +708,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File build.ps1
 1. 仅支持 Windows 10/11 **专业版/企业版**（家庭版无 BitLocker）；
 2. 创建仅支持 `.vhdx` 动态扩展盘；挂载可兼容 `.vhd`；
 3. 密码总是保存到配置（DPAPI）；如需「不保存」，请在挂载后右键「清除记住密码」；
-4. 配置目录从旧版 `%AppData%\BitLockerVault` 迁移到 `%AppData%\XOBitLocker`，**未实现自动迁移**；
-5. 自动挂载由「登录」触发而非「开机」触发（DPAPI `CurrentUser` 约束）；
-6. WMI 不可用时自动锁定会退化为「全局键鼠空闲」判据；
-7. 命名空间仍为 `BitLockerVault.*`（历史原因，不影响显示与功能）。
 
 ---
 
